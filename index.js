@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 require('dotenv').config()
+const cookiesParser = require('cookie-parser')
 
 // files
 const router = require('./routes/index')
@@ -13,6 +14,7 @@ app.use(cors({
     credentials: true
 }))
 app.use(express.json())
+app.use(cookiesParser())
 
 const PORT = process.env.PORT || 8080
 

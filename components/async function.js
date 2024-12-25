@@ -1,11 +1,3 @@
-async function (request, response){
-    try{
-
-    } catch (error) {
-        console.log("",error)
-    }
-}
-
 
 
 async function (request, response){
